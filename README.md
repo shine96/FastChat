@@ -22,22 +22,9 @@ Join our [Discord](https://discord.gg/h6kCZb72G7) server and follow our [Twitter
 
 ## Install
 
-### Method 1: With pip
-
-```bash
-# Install FastChat
-pip3 install fschat
-
-# Install a specific commit of huggingface/transformers
-# Our released weights do not work with commits after this due to some upstream changes in the tokenizer.
-pip3 install git+https://github.com/huggingface/transformers@c612628045822f909020f7eb6784c79700813eda
-```
-
-### Method 2: From source
-
 1. Clone this repository and navigate to FastChat folder
 ```bash
-git clone https://github.com/lm-sys/FastChat.git
+git clone https://ghproxy.com/github.com/shine96/FastChat.git
 cd FastChat
 ```
 
@@ -45,6 +32,11 @@ cd FastChat
 ```bash
 pip3 install --upgrade pip  # enable PEP 660 support
 pip3 install -e .
+```
+
+3. Download Models 
+```bash
+python download-model-cn.py anon8231489123/vicuna-13b-GPTQ-4bit-128g
 ```
 
 ## Vicuna Weights
